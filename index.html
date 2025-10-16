@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>FitCore Studio - Gym & Fitness Center</title>
+  <meta name='description' content='FitCore Studio offers strength training, HIIT, cardio and personal coaching to help you transform your body and health. Join now.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-sans antialiased bg-white text-gray-800'>
+  <!-- Navigation -->
+  <nav class='bg-white shadow sticky top-0 z-40' aria-label='Main'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex items-center justify-between h-16'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='text-2xl font-semibold text-gray-800'>FitCore Studio</span>
+        </a>
+        <div class='hidden md:flex space-x-8'>
+          <a href='index.html' class='text-gray-600 hover:text-gray-900'>Home</a>
+          <a href='about.html' class='text-gray-600 hover:text-gray-900'>About</a>
+          <a href='contact.html' class='text-gray-600 hover:text-gray-900'>Contact</a>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='bg-gray-100 p-2 rounded-md text-gray-600 hover:text-gray-900'>
+            <span class='sr-only'>Open main menu</span>
+            <svg class='h-6 w-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' aria-hidden='true'>
+              <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id='mobile-menu' class='md:hidden hidden'>
+    <a href='index.html' class='block px-4 py-2 text-sm text-gray-700'>Home</a>
+    <a href='about.html' class='block px-4 py-2 text-sm text-gray-700'>About</a>
+    <a href='contact.html' class='block px-4 py-2 text-sm text-gray-700'>Contact</a>
+  </div>
+
+  <!-- Hero Section with Background Image -->
+  <section class='min-h-screen flex items-center justify-center relative bg-cover bg-center' style='background-image: url(https://images.unsplash.com/photo-1671970922029-0430d2ae122c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBmaXRuZXNzJTIwY2VudGVyJTIwd2l0aCUyMGVxdWlwbWVudCUyMGFuZCUyMHBlb3BsZSUyMHdvcmtpbmclMjBvdXR8ZW58MHwwfHx8MTc2MDYwMjA5NXww&ixlib=rb-4.1.0&q=80&w=1080);'>
+    <div class='absolute inset-0 bg-black bg-opacity-50'></div>
+    <div class='relative z-10 max-w-4xl text-center text-white p-6'>
+      <h1 class='text-4xl md:text-6xl font-bold mb-4 font-[Oswald]'>Transform Your Body, Transform Your Life
+        <span class='block text-yellow-300'>Achieve Your Peak</span>
+      </h1>
+      <p class='text-xl md:text-2xl mb-8 text-gray-200'>Join a community of athletes and world‑class trainers at FitCore Studio.</p>
+      <div class='flex flex-col sm:flex-row gap-4 justify-center'>
+        <a href='contact.html' class='bg-yellow-400 text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-all duration-300'>Join Now</a>
+        <a href='#programs' class='border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300'>View Programs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id='programs' class='py-16 bg-gray-50'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <h2 class='text-3xl font-[Oswald] text-gray-800 mb-6'>Our Programs</h2>
+      <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
+        <div class='bg-white rounded-lg shadow p-6 hover:shadow-xl transition-all duration-300'>
+          <div class='flex items-center justify-between'>
+            <h3 class='font-[Oswald] text-xl mb-2'>Strength & Muscle</h3>
+            <span class='text-2xl' aria-label='muscle'>💪</span>
+          </div>
+          <p class='text-gray-600'>Structured strength training with progressive overload and coach-led sessions.</p>
+        </div>
+        <div class='bg-white rounded-lg shadow p-6 hover:shadow-xl transition-all duration-300'>
+          <div class='flex items-center justify-between'>
+            <h3 class='font-[Oswald] text-xl mb-2'>HIIT & Cardio</h3>
+            <span class='text-2xl' aria-label='cardio'>🏃</span>
+          </div>
+          <p class='text-gray-600'>High-intensity interval training to boost endurance and metabolism.</p>
+        </div>
+        <div class='bg-white rounded-lg shadow p-6 hover:shadow-xl transition-all duration-300'>
+          <div class='flex items-center justify-between'>
+            <h3 class='font-[Oswald] text-xl mb-2'>Personal Training</h3>
+            <span class='text-2xl' aria-label='personal training'>👤</span>
+          </div>
+          <p class='text-gray-600'>One-on-one coaching with a dedicated trainer for your goals.</p>
+        </div>
+        <div class='bg-white rounded-lg shadow p-6 hover:shadow-xl transition-all duration-300'>
+          <div class='flex items-center justify-between'>
+            <h3 class='font-[Oswald] text-xl mb-2'>Group Classes</h3>
+            <span class='text-2xl' aria-label='group class'>🧘</span>
+          </div>
+          <p class='text-gray-600'>Motivating classes in a supportive, energetic environment.</p>
+        </div>
+      </div>
+      <div class='mt-8 flex justify-center'>
+        <a href='contact.html' class='bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-all duration-300'>Join a Program</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why FitCore section -->
+  <section class='py-12 bg-white'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-8'>
+        <div class='p-6 bg-gray-50 rounded-lg'>
+          <h4 class='font-semibold text-lg mb-2'>Expert Coaching</h4>
+          <p class='text-sm text-gray-600'>Certified trainers guide every movement with program accuracy and safety.
+          </p>
+        </div>
+        <div class='p-6 bg-gray-50 rounded-lg'>
+          <h4 class='font-semibold text-lg mb-2'>State-of-the-Art Equipment</h4>
+          <p class='text-sm text-gray-600'>Premium machines and free weights in a clean, modern facility.</p>
+        </div>
+        <div class='p-6 bg-gray-50 rounded-lg'>
+          <h4 class='font-semibold text-lg mb-2'>Supportive Community</h4>
+          <p class='text-sm text-gray-600'>A motivating atmosphere that keeps you accountable and inspired.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class='py-12 bg-gray-100'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <h2 class='text-2xl font-[Oswald] mb-6'>What Members Say</h2>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <blockquote class='bg-white p-6 rounded-lg shadow'>
+          <p class='text-gray-700'>"I joined to get stronger, but I found a community that keeps me motivated every day."</p>
+          <footer class='mt-2 text-sm text-gray-500'>- Jordan M.</footer>
+        </blockquote>
+        <blockquote class='bg-white p-6 rounded-lg shadow'>
+          <p class='text-gray-700'>"The trainers are incredibly knowledgeable and supportive. My endurance has improved dramatically."</p>
+          <footer class='mt-2 text-sm text-gray-500'>- Casey L.</footer>
+        </blockquote>
+        <blockquote class='bg-white p-6 rounded-lg shadow'>
+          <p class='text-gray-700'>"Clean facility, great equipment, and a program that fits into my busy schedule."</p>
+          <footer class='mt-2 text-sm text-gray-500'>- Alex P.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Facilities Preview -->
+  <section class='py-12'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <h2 class='text-2xl font-[Oswald] mb-4'>Our Facilities</h2>
+      <div class='grid grid-cols-2 sm:grid-cols-4 gap-4'>
+        <figure class='rounded-lg overflow-hidden bg-white'>
+          <img src='https://images.pexels.com/photos/5942021/pexels-photo-5942021.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Modern gym interior with equipment' class='w-full h-28 object-cover'>
+        </figure>
+        <figure class='rounded-lg overflow-hidden bg-white'>
+          <img src='https://images.pexels.com/photos/6388359/pexels-photo-6388359.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Free weights and racks' class='w-full h-28 object-cover'>
+        </figure>
+        <figure class='rounded-lg overflow-hidden bg-white'>
+          <img src='https://images.unsplash.com/photo-1715111965644-3d885beb3a44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwyfHxjYXJkaW8lMjBhcmVhfGVufDB8MHx8fDE3NjA2MjM0NTh8MA&ixlib=rb-4.1.0&q=80&w=1080' alt='Cardio machines and space' class='w-full h-28 object-cover'>
+        </figure>
+        <figure class='rounded-lg overflow-hidden bg-white'>
+          <img src='https://images.unsplash.com/photo-1752579664702-e6609516e21a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxncm91cCUyMGNsYXNzJTIwc3BhY2V8ZW58MHwwfHx8MTc2MDYyMzQ1OXww&ixlib=rb-4.1.0&q=80&w=1080' alt='Group class area' class='w-full h-28 object-cover'>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class='bg-gray-900 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12'>
+      <div class='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <!-- Brand/About Column -->
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h3 class='text-2xl font-bold mb-2 text-yellow-400'>FitCore Studio</h3>
+          <p class='text-gray-300 mb-4'>Transform your life with expert training, state-of-the-art equipment, and a supportive community.</p>
+          <p class='text-sm text-gray-300'>789 Fitness Blvd, Health District</p>
+        </div>
+        <!-- Contact Info Column -->
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-2 text-yellow-400'>Contact</h4>
+          <div class='space-y-2'>
+            <div class='flex items-center space-x-2 text-sm text-gray-300'>
+              <span>📞</span><span>(555) 123-4567</span>
+            </div>
+            <div class='flex items-center space-x-2 text-sm text-gray-300'>
+              <span>✉️</span><span>info@fitcore.example</span>
+            </div>
+          </div>
+        </div>
+        <!-- Hours Column -->
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-2 text-yellow-400'>Business Hours</h4>
+          <p class='text-sm text-gray-300'>Mon-Fri: 5:00 AM - 11:00 PM</p>
+          <p class='text-sm text-gray-300'>Sat-Sun: 6:00 AM - 10:00 PM</p>
+        </div>
+        <!-- Quick Links Column -->
+        <div class='transform hover:scale-105 transition-transform duration-300'>
+          <h4 class='text-lg font-semibold mb-2 text-yellow-400'>Quick Links</h4>
+          <ul class='space-y-2'>
+            <li><a href='about.html' class='text-gray-300 hover:text-white'>About</a></li>
+            <li><a href='programs.html' class='text-gray-300 hover:text-white'>Programs</a></li>
+            <li><a href='contact.html' class='text-gray-300 hover:text-white'>Contact</a></li>
+            <li><a href='https://example.com/privacy' class='text-gray-300 hover:text-white'>Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class='border-gray-700 my-8 opacity-50'>
+      <div class='flex flex-col md:flex-row justify-between items-center'>
+        <p class='text-gray-400 text-sm text-center'>© 2025 FitCore Studio. All rights reserved.</p>
+        <div class='flex space-x-4 mt-2 md:mt-0'>
+          <span class='text-gray-400 text-sm'>Facebook</span>
+          <span class='text-gray-400 text-sm'>Instagram</span>
+          <span class='text-gray-400 text-sm'>YouTube</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
