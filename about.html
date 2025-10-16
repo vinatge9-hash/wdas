@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>About FitCore Studio</title>
+  <meta name='description' content='Learn about FitCore Studio, our mission, and our team of certified trainers dedicated to helping you reach your goals.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-sans antialiased bg-white text-gray-800'>
+  <!-- Navigation -->
+  <nav class='bg-white shadow sticky top-0 z-40' aria-label='Main'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex items-center justify-between h-16'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='text-2xl font-semibold text-gray-800'>FitCore Studio</span>
+        </a>
+        <div class='hidden md:flex space-x-8'>
+          <a href='index.html' class='text-gray-600 hover:text-gray-900'>Home</a>
+          <a href='about.html' class='text-gray-600 hover:text-gray-900'>About</a>
+          <a href='contact.html' class='text-gray-600 hover:text-gray-900'>Contact</a>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='bg-gray-100 p-2 rounded-md text-gray-600 hover:text-gray-900'>
+            <span class='sr-only'>Open main menu</span>
+            <svg class='h-6 w-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' aria-hidden='true'>
+              <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id='mobile-menu' class='md:hidden hidden'>
+    <a href='index.html' class='block px-4 py-2 text-sm text-gray-700'>Home</a>
+    <a href='about.html' class='block px-4 py-2 text-sm text-gray-700'>About</a>
+    <a href='contact.html' class='block px-4 py-2 text-sm text-gray-700'>Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class='min-h-screen flex items-center justify-center bg-cover bg-center' style='background-image: url(https://images.unsplash.com/photo-1720855248491-4e152208fe66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBsYXclMjBsaWJyYXJ5JTIwd2l0aCUyMGJvb2tzJTIwYW5kJTIwZWxlZ2FudCUyMG9mZmljZSUyMHNldHRpbmd8ZW58MHwwfHx8MTc2MDYyMzQ2MHww&ixlib=rb-4.1.0&q=80&w=1080);'>
+    <div class='absolute inset-0 bg-black bg-opacity-40'></div>
+    <div class='relative z-10 max-w-4xl text-center text-white p-6'>
+      <h1 class='text-4xl md:text-5xl font-bold mb-4 font-[Crimson Text]'>About FitCore Studio</h1>
+      <p class='text-lg md:text-xl text-gray-200 mb-6'>At FitCore Studio, we believe consistent, science-based training changes lives. Our mission is to empower every member to reach their potential in a supportive environment.</p>
+      <div class='flex justify-center'>
+        <a href='contact.html' class='bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-all duration-300'>Join Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class='py-12 bg-white'>
+    <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <h2 class='text-3xl font-[Oswald] mb-6'>Meet Our Team</h2>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <div class='bg-gray-50 rounded-lg p-4 shadow'>
+          <h3 class='font-semibold text-lg'>Alex Kim</h3>
+          <p class='text-sm text-gray-600'>Head of Strength & Conditioning</p>
+        </div>
+        <div class='bg-gray-50 rounded-lg p-4 shadow'>
+          <h3 class='font-semibold text-lg'>Priya Patel</h3>
+          <p class='text-sm text-gray-600'>Senior Fitness Coach</p>
+        </div>
+        <div class='bg-gray-50 rounded-lg p-4 shadow'>
+          <h3 class='font-semibold text-lg'>Daniel Lee</h3>
+          <p class='text-sm text-gray-600'>Nutrition Specialist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (simplified) -->
+  <footer class='bg-gray-900 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-8'>
+      <p class='text-sm text-gray-300 text-center'>© 2025 FitCore Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
